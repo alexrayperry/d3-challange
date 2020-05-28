@@ -27,7 +27,7 @@ var svg = d3.select("#scatter")
 
 /////////////// READ IN CSV DATA & CREATE GRAPH  /////////////////////////
 
-d3.csv("data.csv").then(function(censusData) {
+d3.csv("./assets/data/data.csv").then(function(censusData) {
 
     censusData.forEach(function(data) {
         data.healthcare = +data.healthcare;
